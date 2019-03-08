@@ -1,0 +1,21 @@
+<p>Universidade: {{universidade}} </p>
+<p>Curso: {{ curso }} </p>
+<table>
+    <thead>
+        <tr>
+            <th>Periodo</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <body>
+        <tr *ngFor = "let listaDeDiciplina of listaDeDiciplinas">
+            <td> {{listaDeDiciplina.periodo}} </td>
+            <td> {{listaDeDiciplina.nome}} </td>
+
+        </tr>
+    </body>
+</table>
+<p>Onde Trabalha: {{ ondeTrabalha }}</p>
+<p>Cargo: {{ cargo }}</p>
+
+ 
